@@ -1,0 +1,146 @@
+body{
+height:100vh;
+background:linear-gradient(135deg,#ffffff,#a4af0b);
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:'Poppins',sans-serif;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+.admin-login{
+display:flex;
+align-items:center;
+width:900px;
+}
+
+.left-side{
+flex:1;
+text-align:center;
+}
+
+.logo{
+width:120px;
+margin-bottom:15px;
+filter:drop-shadow(0 0 12px #ffd700);
+}
+
+.left-side h1{
+font-size:24px;
+font-weight:500;
+}
+
+.divider{
+width:1px;
+height:320px;
+background:rgb(255, 255, 255);
+margin:0 60px;
+}
+
+.right-side{
+flex:1;
+padding:45px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(8px);
+border-radius:14px;
+box-shadow:0 20px 40px rgba(0,0,0,0.45);
+}
+
+.right-side h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.right-side p{
+font-size:14px;
+margin-bottom:20px;
+color:#000000;
+}
+
+.right-side input{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border-radius:6px;
+border:none;
+background:rgba(255,255,255,0.15);
+color:white;
+}
+
+.right-side input::placeholder{
+color:#000000;
+}
+
+.right-side button{
+width:100%;
+padding:12px;
+background:linear-gradient(135deg,#ffd700,#ffcc00);
+border:none;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.right-side button:hover{
+transform:scale(1.03);
+box-shadow:0 0 10px #ffd700;
+}
+
+.error{
+background:#ff4d4d;
+padding:8px;
+margin-bottom:10px;
+border-radius:4px;
+}
+
+.right-side a{
+color:#333;
+font-size:14px;
+text-decoration:none;
+}
+
+.right-side a:hover{
+text-decoration:underline;
+color:#000;
+}
+
+.subtitle{
+color:#444;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.right-side input{
+color:#222;
+}
+
+#toast{
+position:fixed;
+top:30px;
+right:30px;
+background:#000000;
+color:white;
+padding:14px 20px;
+border-radius:8px;
+font-size:14px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+opacity:0;
+transform:translateY(-20px);
+animation:toastIn 0.5s forwards;
+z-index:9999;
+}
+
+@keyframes toastIn{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
